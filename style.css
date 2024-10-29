@@ -82,13 +82,13 @@ form {
 .banner-text {
     position: absolute;
     top: 50%;
-    left: 0; /* Mulai dari tepi kiri banner */
-    transform: translate(-100%, -50%); /* Mulai dari luar frame */
+    left: 0; 
+    transform: translate(-100%, -50%); 
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     opacity: 0;
-    transition: all 2s cubic-bezier(0.25, 0.1, 0.25, 1); /* Transisi lebih lambat dan smooth */
-    width: 50%; /* Batasi lebar teks */
+    transition: all 2s cubic-bezier(0.25, 0.1, 0.25, 1); 
+    width: 50%; 
     padding: 20px;
 }
 
@@ -98,7 +98,7 @@ form {
 
 .banner-text.active {
     opacity: 1;
-    transform: translate(0, -50%); /* Geser ke posisi akhir */
+    transform: translate(0, -50%); 
 }
 
 .banner-text h2 {
@@ -112,31 +112,31 @@ form {
 }
 
 .hidden {
-    opacity: 0; /* Kelas untuk menyembunyikan elemen dengan transisi */
+    opacity: 0; 
 }
 
 .visible {
-    opacity: 1; /* Kelas untuk menampilkan elemen dengan transisi */
+    opacity: 1; 
 }
 
 .banner {
     position: relative;
     width: 100%;
-    height: 70vh; /* Batasi tinggi banner agar tidak terlalu besar */
-    overflow: hidden; /* Hilangkan batas tepi kiri dan kanan */
-    margin: 1rem 0 0 0; /* Tambahkan margin atas */
+    height: 70vh; 
+    overflow: hidden; 
+    margin: 1rem 0 0 0; 
     padding: 0;
 }
 
 .banner-content {
     position: absolute;
     top: 50%;
-    left: 5%; /* Ubah posisi teks lebih ke kiri */
+    left: 5%; 
     transform: translateY(-50%);
-    text-align: left; /* Ubah teks menjadi rata kiri */
+    text-align: left; 
     color: #fff;
     z-index: 1;
-    text-shadow: 3px 3px 6px #000000; /* Tambahkan outline yang lebih tebal pada teks */
+    text-shadow: 3px 3px 6px #000000; 
 }
 
 .banner-content h2 {
@@ -191,32 +191,32 @@ form {
     right: 10px;
 }
 
-/* Tambahkan CSS untuk about-section dan about-image */
+
 .about-section {
     display: flex;
-    align-items: center; /* Rata tengah secara vertikal */
+    align-items: center; 
     margin-bottom: 40px;
-    justify-content: space-between; /* Jarak antara gambar dan teks */
-    gap: 20px; /* Jarak antara elemen */
-    padding: 0 5%; /* Ruang di sisi layar */
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 0 5%; 
 }
 
 .about-section img {
-    max-width: 35%; /* Ukuran gambar agar tidak terlalu besar */
-    height: auto; /* Memastikan proporsi gambar tetap */
-    margin: 0 20px 0 0; /* Margin kanan untuk gambar */
+    max-width: 35%; 
+    height: auto; 
+    margin: 0 20px 0 0; 
 }
 
 .about-section p {
-    flex: 2; /* Membuat teks lebih lebar */
-    text-align: left; /* Rata kiri untuk teks */
-    line-height: 1.6; /* Jarak antar baris */
-    margin: 0; /* Menghilangkan margin default */
+    flex: 2; 
+    text-align: left; 
+    line-height: 1.6;
+    margin: 0; 
 }
 .slide-up {
     opacity: 0;
     transform: translateY(20px);
-    animation: slide-up 1.5s ease-out forwards; /* Durasi diperpanjang dan easing ditambahkan */
+    animation: slide-up 1.5s ease-out forwards; 
 }
 
 @keyframes slide-up {
@@ -230,26 +230,26 @@ form {
     }
 }
 
-/* Tambahkan delay untuk setiap paragraf jika diinginkan */
+
 .about-section p:nth-child(2) {
-    animation-delay: 0.3s; /* Delay untuk paragraf kedua */
+    animation-delay: 0.3s; 
 }
 
 .about-section p:nth-child(4) {
-    animation-delay: 0.6s; /* Delay untuk paragraf keempat */
+    animation-delay: 0.6s;
 }
 
-/* Responsif untuk layar kecil */
+
 @media (max-width: 768px) {
     .about-section {
-        flex-direction: column; /* Ubah ke kolom pada layar kecil */
-        align-items: center; /* Center-align pada layar kecil */
-        padding: 0 2rem; /* Batas sisi pada layar kecil */
+        flex-direction: column; 
+        align-items: center; 
+        padding: 0 2rem; 
     }
 
     .about-section img {
-        margin: 0 0 20px 0; /* Beri margin bawah untuk spasi */
-        max-width: 80%; /* Lebar penuh hampir pada layar kecil */
+        margin: 0 0 20px 0; 
+        max-width: 80%; 
     }
 
     .about-section p {
@@ -267,10 +267,10 @@ form {
     flex: 1;
     max-width: 35%;
     height: auto;
-    object-fit: cover; /* Maintain aspect ratio */
-    margin-right: 20px; /* Add margin to the right of the image */
-    border: 5px solid #ccc; /* Add a border to the image */
-    border-radius: 10px; /* Optional: Add rounded corners to the border */
+    object-fit: cover; 
+    margin-right: 20px; 
+    border: 5px solid #ccc; 
+    border-radius: 10px;
 }
 
 .new-section div {
@@ -278,75 +278,74 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 60%; /* Limit the width of the text container */
-    width: 100%; /* Ensure it takes full width within the flex container */
+    max-width: 60%; 
+    width: 100%;
 }
 
 .new-section p {
     text-align: left;
     line-height: 1.6;
-    margin: 0; /* Remove default margin */
-    max-width: 800px; /* Limit the width of the text */
-    width: 100%; /* Ensure it takes full width within the flex container */
+    margin: 0; 
+    max-width: 800px;
+    width: 100%; 
 }
 
 .highlighted-header {
-    font-size: 2rem; /* Increase font size for the header */
-    margin-bottom: 1rem; /* Add some space below the header */
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
 }
 
 .highlighted-text {
-    font-size: 1.2rem; /* Increase font size for the paragraphs */
+    font-size: 1.2rem;
 }
 
 .btn-selengkapnya {
     display: inline-block;
-    width: 200px; /* Tentukan lebar button */
-    height: 50px; /* Tentukan tinggi button */
+    width: 200px; 
+    height: 50px;
     margin-top: 1rem;
-    padding: 0; /* Hilangkan padding agar ukuran button tetap */
-    background-color: #7a6a57; /* Button background color */
-    color: #fff; /* Button text color */
-    text-decoration: none; /* Remove underline from link */
-    border-radius: 2px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-    font-size: 1.3rem; /* Tentukan ukuran font */
-    line-height: 50px; /* Vertically center text */
-    text-align: center; /* Horizontally center text */
+    padding: 0; 
+    background-color: #7a6a57; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 2px; 
+    transition: background-color 0.3s;
+    font-size: 1.3rem; 
+    line-height: 50px; 
+    text-align: center;
 }
 
 .btn-selengkapnya:hover {
-    background-color: #0056b3; /* Darker background color on hover */
-    width: 200px; /* Pastikan ukuran tetap pada hover */
-    height: 50px; /* Pastikan ukuran tetap pada hover */
+    background-color: #f10028; 
+    width: 200px; 
+    height: 50px; 
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .new-section {
-        flex-direction: column; /* Stack vertically on smaller screens */
+        flex-direction: column; 
         align-items: center;
     }
 
     .new-section img {
-        max-width: 80%; /* Adjust image size for smaller screens */
-        margin: 0 0 20px 0; /* Margin below the image */
+        max-width: 80%; 
+        margin: 0 0 20px 0; 
     }
 
     .new-section div {
-        max-width: 100%; /* Allow full width for text container on smaller screens */
+        max-width: 100%;
     }
 
     .new-section p {
-        text-align: center; /* Center text on smaller screens */
+        text-align: center; 
     }
 
     .highlighted-header {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem; 
     }
 
     .highlighted-text {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1rem;
     }
 }
 .product-grid {
@@ -400,7 +399,7 @@ form {
 }
 
 .product-item .btn-buy:hover {
-    background-color: #0056b3;
+    background-color: #f10028;
 }
 
 .product-item:hover {
@@ -416,18 +415,17 @@ form {
     max-width: 270px;
     height: auto;
 }
-/* Container for the form */
+
 .container {
-    max-width: 500px; /* Reduce the max-width */
-    margin: 2rem auto; /* Add margin to the top and bottom */
-    padding: 1.5rem; /* Adjust padding */
+    max-width: 500px;
+    margin: 2rem auto; 
+    padding: 1.5rem; 
     background-color: #1a1a1a;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #333; /* Add border for better appearance */
+    border: 1px solid #333; 
 }
 
-/* Style the form elements */
 form {
     display: flex;
     flex-direction: column;
@@ -437,7 +435,7 @@ form {
 form label {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #fff; /* Ensure label text is visible */
+    color: #fff;
 }
 
 form input[type="text"],
@@ -496,7 +494,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #f10028;
 }
 
 /* Responsive adjustments for smaller screens */

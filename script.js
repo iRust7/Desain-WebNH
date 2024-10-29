@@ -61,17 +61,16 @@ bannerVideo.addEventListener('ended', () => {
   nextBanner();
 });
 
-showBanner(currentBanner); // Initialize the first banner
+showBanner(currentBanner); 
 
 function updateSliderValue(value) {
   document.getElementById('sliderValue').textContent = value + '/10';
 }
 
-// Handling form submission
 document.addEventListener('DOMContentLoaded', function() {
   var form = document.getElementById("feedbackForm");
   
-  if(form) { // Check if form exists before adding event listener
+  if(form) { 
       async function handleSubmit(event) {
           event.preventDefault();
           var status = document.getElementById("form-status");
