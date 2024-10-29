@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="assets/logo.png" alt="Sherlock Bookstore Logo" class="logo">
+    </a>
+    <h1>Welcome to Sherlock Bookstore</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="product.html">Product</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+    <div class="banner">
+      <video id="bannerVideo" autoplay muted>
+        <source src="assets/bnvideo.mp4" type="video/mp4">
+      </video>
+      <div id="bannerImage1" class="banner-image" style="display: none;">
+        <img src="assets/ban1.jpg" alt="Banner Image 1">
+        <div class="banner-text slide-right">
+          <h2>Temukan Bacaan Hebat Anda Berikutnya</h2>
+          <p>Jelajahi berbagai koleksi buku dengan harga terbaik!</p>
+        </div>
+      </div>
+      <!-- Tambahkan banner lain jika ada -->
+      <div class="banner-indicators">
+        <span class="indicator active" data-index="0"></span>
+        <span class="indicator" data-index="1"></span>
+      </div>
+      <button class="banner-nav left" onclick="prevBanner()">&#10094;</button>
+      <button class="banner-nav right" onclick="nextBanner()">&#10095;</button>
+    </div>
+  </header>
+  <main>
+    <h2 class="highlighted-header">Mengubah Hari Biasa Menjadi Petualangan</h2>
+    <div class="new-section">
+      <img src="assets/ban2.png" alt="Cover Book" class="cover-image">
+      <div>
+        <p class="highlighted-text">Langkahkan dirimu ke dalam dunia Sherlock Holmes dan biarkan dirimu tersihir oleh daya tarik misteri dan teka-teki!, Di sini, kami lebih dari sekadar komunitas – kami adalah tujuan utama bagi mereka yang ingin mendalami kisah legendaris sang detektif.</p>
+        <p class="highlighted-text">Dengan semangat yang mendalam terhadap setiap cerita Sherlock Holmes, kami telah mengkurasi koleksi buku yang luar biasa – mulai dari edisi klasik hingga adaptasi modern. Setiap judul kami pilih dengan teliti untuk menghormati kejeniusan dan petualangan Sherlock Holmes, menghadirkan pengalaman membaca yang serasa mengikuti langkah-langkah sang detektif sendiri.</p>
+        <p class="highlighted-text">Bersiaplah, dan mulailah petualangan membaca yang tak terlupakan!</p>
+        <a href="about.html" class="btn-selengkapnya">Selengkapnya</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>TUGAS UTS MOH NURUL HAQ</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
