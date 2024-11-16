@@ -9,30 +9,17 @@ Repository ini berisi tugas Desain Web untuk memenuhi keperluan mata kuliah Desa
 
 ## Deskripsi Project
 
-Proyek ini mencakup pembuatan website dengan berbagai halaman dan desain menggunakan CSS. Spesifikasi dan fitur yang dikembangkan mengikuti instruksi tugas.
-
-## Struktur Halaman
-
-- **Index:** Halaman utama yang menampilkan informasi dasar.
-- **Profil:** Halaman profil yang memuat informasi tentang saya.
-- **Produk:** Halaman yang berisi katalog produk.
-- **Feedback:** Halaman untuk menerima masukan dari pengguna.
-
+Proyek ini mencakup konsep ews
 ## Teknologi yang Digunakan
 
-- HTML
+- TYPESCRIPT
 - CSS
 - JavaScript
 
 ## Preview Website
 
-Website dapat diakses melalui link berikut: [Preview Website](https://desain-web-nh-sherlocksh-v1.vercel.app/)
-
-## Cara Menjalankan
-
-1. Clone repository ini.
-2. Buka file `index.html` di browser.
+Website dapat diakses melalui link berikut: [Preview Website]()
 
 ## License
 
-Proyek ini untuk keperluan tugas kuliah saja.
+Proyek ini untuk keperluan Tugas IMK.
